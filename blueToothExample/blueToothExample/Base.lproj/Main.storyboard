@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,12 +16,12 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mYG-qF-a43">
-                                <rect key="frame" x="40" y="28" width="25" height="25"/>
-                                <color key="backgroundColor" red="1" green="0.35576191740000002" blue="0.32305863470000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <frame key="frameInset" minX="40" minY="28" width="25" height="25"/>
+                                <color key="backgroundColor" red="1" green="0.35576191740000002" blue="0.32305863470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="0yF-gv-kq4"/>
                                     <constraint firstAttribute="width" constant="25" id="mxS-oH-php"/>
@@ -32,8 +33,8 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qnr-uU-caN">
-                                <rect key="frame" x="120" y="28" width="50" height="30"/>
-                                <color key="backgroundColor" red="0.065417669713497162" green="0.85636872053146362" blue="0.58513760566711426" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <frame key="frameInset" minX="120" minY="28" width="50" height="30"/>
+                                <color key="backgroundColor" red="0.12564417719841003" green="0.84057015180587769" blue="0.51379889249801636" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="UJj-uR-PpG"/>
                                     <constraint firstAttribute="width" constant="50" id="c3D-Ry-CRp"/>
@@ -44,8 +45,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0BS-cU-2FC">
-                                <rect key="frame" x="210" y="28" width="60" height="30"/>
-                                <color key="backgroundColor" red="0.065417669713497162" green="0.85636872053146362" blue="0.58513760566711426" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <frame key="frameInset" minX="214" minY="28" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.12564417719841003" green="0.84057015180587769" blue="0.51379889249801636" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="86Y-wL-yqw"/>
                                     <constraint firstAttribute="width" constant="60" id="rdO-j6-TM5"/>
@@ -55,14 +56,27 @@
                                     <action selector="connectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wVu-S9-Ie6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyR-Os-XuK">
+                                <color key="backgroundColor" red="0.91179376840591431" green="0.68789082765579224" blue="0.28125020861625671" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="n8p-Mk-1N1"/>
+                                    <constraint firstAttribute="width" constant="50" id="t9P-iI-Se8"/>
+                                </constraints>
+                                <state key="normal" title="write"/>
+                                <connections>
+                                    <action selector="writeAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Vn-Or-fdI"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="mYG-qF-a43" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="7Ib-x9-SnH"/>
                             <constraint firstItem="mYG-qF-a43" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="8O6-Ae-y4g"/>
                             <constraint firstItem="0BS-cU-2FC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="BL6-oZ-Y6S"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="0BS-cU-2FC" secondAttribute="trailing" constant="310" id="Z2U-eJ-huY"/>
+                            <constraint firstItem="tyR-Os-XuK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="Tns-d5-ONy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0BS-cU-2FC" secondAttribute="trailing" constant="30" id="ZXW-Kj-31A"/>
                             <constraint firstItem="Qnr-uU-caN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="pKU-Mb-rxT"/>
+                            <constraint firstItem="tyR-Os-XuK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="sQX-NX-jka"/>
                             <constraint firstItem="Qnr-uU-caN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="vWT-jW-8qQ"/>
                         </constraints>
                     </view>
@@ -70,11 +84,12 @@
                         <outlet property="btIndicator" destination="mYG-qF-a43" id="jqE-Fv-DhN"/>
                         <outlet property="connect" destination="0BS-cU-2FC" id="7bt-7n-oeP"/>
                         <outlet property="scanBtn" destination="Qnr-uU-caN" id="ooL-5f-dtw"/>
+                        <outlet property="writeBtn" destination="tyR-Os-XuK" id="Gui-6Q-PTt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="245" y="233"/>
+            <point key="canvasLocation" x="243.75" y="232.3943661971831"/>
         </scene>
     </scenes>
 </document>

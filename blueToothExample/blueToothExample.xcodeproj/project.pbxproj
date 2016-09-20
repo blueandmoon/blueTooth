@@ -164,6 +164,7 @@
 				TargetAttributes = {
 					C03F6F9F1D9105E1004AB39B = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = SZND2QA3B5;
 					};
 					C03F6FB81D9105E1004AB39B = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -347,6 +348,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SZND2QA3B5;
 				INFOPLIST_FILE = blueToothExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = qingshanliuyun.blueToothExample;
@@ -358,6 +360,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SZND2QA3B5;
 				INFOPLIST_FILE = blueToothExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = qingshanliuyun.blueToothExample;
@@ -406,6 +409,7 @@
 				C03F6FC41D9105E1004AB39B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C03F6FC51D9105E1004AB39B /* Build configuration list for PBXNativeTarget "blueToothExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +418,7 @@
 				C03F6FC71D9105E1004AB39B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
